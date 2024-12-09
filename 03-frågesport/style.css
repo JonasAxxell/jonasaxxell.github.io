@@ -1,0 +1,26 @@
+#game-in-progress {
+    display: none;
+}
+
+#game-feedback {
+    display: none;
+}
+body {
+    background-image: url('images/tree-2459444_1920.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+.audio-controls{
+    position: fixed; 
+    right: 10px; 
+    left: 10px; 
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+    margin: 10px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /
+}
