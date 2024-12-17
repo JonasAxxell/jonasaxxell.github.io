@@ -142,27 +142,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 
-function openDoor(arrIndex, divId){
-	
-	if(today > arrIndex){
-		document.getElementById(divId).style.backgroundImage = "url(img/" + infoArray[arrIndex].imgSrc+")";
-		document.getElementById("offer-details").innerHTML = infoArray[arrIndex].message;
-		document.getElementById("redeem-code").innerHTML = infoArray[arrIndex].code;
-	}
-	else {
-		alert("får inte öppna");
-	}
-}
- // Funktionen som hindrar användaren att öppna luckorna före det rätta datumet, ta bort de koden under att testa på programmet
 function openDoor(arrIndex, divId) {
-
-	if (month === 7 && today > arrIndex) { 
+	if (today > arrIndex) {
 			document.getElementById(divId).style.backgroundImage = "url(img/" + infoArray[arrIndex].imgSrc + ")";
 			document.getElementById("offer-details").innerHTML = infoArray[arrIndex].message;
 			document.getElementById("redeem-code").innerHTML = infoArray[arrIndex].code;
+
+			// kombinerar meddelandet + rabattkoden i en alert
+			alert(infoArray[arrIndex].message + "\nCode: " + infoArray[arrIndex].code);
 	} else {
-			alert("Du får inte öppna denna dörr ännu!");
+			alert("får inte öppna");
 	}
 }
+
+ // Funktionen som hindrar användaren att öppna luckorna före det rätta datumet, ta bort de koden under att testa på programmet
+
 
 
