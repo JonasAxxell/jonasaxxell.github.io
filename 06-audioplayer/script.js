@@ -3,17 +3,17 @@ const songsArray = [
   {
     title: "Alan Walker - Fade",
     image: "images/Alan_Walker_Fade.jpg",
-    audio: "audio/Alan_Walker_Fade.mp3"
+    audio: "audio/Alan Walker - Fade.mp3"
   },
   {
     title: "NCS - Ark",
     image: "images/NCS_Ark.jpg",
-    audio: "audio/NCS_Ark.mp3"
+    audio: "audio/NCS - Ark.mp3"
   },
   {
     title: "M4SONIC - Weapon",
     image: "images/M4SONIC_Weapon.jpg",
-    audio: "audio/M4SONIC_Weapon.mp3"
+    audio: "audio/M4SONIC - Weapon.mp3"
   }
 ];
 
