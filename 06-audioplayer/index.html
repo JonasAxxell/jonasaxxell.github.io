@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Audio Player</title>
+</head>
+<body>
+  <div class="audio-player">
+    
+    <div class="controls">
+      <input type="range" id="volumeControl" class="volume-slider" min="0" max="1" step="0.01" value="1">
+      <span id="volumeLabel">100%</span>
+    </div>
+
+    <div class="now-playing">
+      <p>Now playing</p>
+    </div>
+
+    <div class="artist-cover">
+      <img id="artist-cover" src="images/Alan walker - fade.jpg">
+    </div>
+
+    <div class="progress-container">
+      <progress id="progressBar" value="0" max="100"></progress>
+      <span id="progressTime">0:00 / 0:00</span>
+    </div>
+
+    <div class="buttons">
+      <button id="prevButton">
+        <img id="prevIcon" src="images/previous.png">
+      </button>
+      <button id="playButton">
+        <img id="playIcon" src="images/play-button.png">
+      </button>
+      <button id="nextButton">
+        <img id="nextIcon" src="images/next.png">
+      </button>
+      <button id="muteButton">
+        <img id="muteIcon" src="images/mute.png">
+      </button>
+    </div>
+    <audio id="audio"></audio> 
+    <div id="playlist" class="playlist"></div>
+  </div>
+  
+</body>
+</html>
